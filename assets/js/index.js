@@ -1140,7 +1140,7 @@
             isMouseDown: 0,
             defaultCameraFov: 60,
             sceneRenderTarget: null,
-            path: null,
+            path: "",
             gui: !1,
             usePostprocessing: !1,
             sharedPostprocessing: !1,
@@ -5512,37 +5512,7 @@
   function (e, t, n) {
     "use strict";
     var i = n(5);
-    t.add = function (e) {
-      if (window.atob) {
-        var t = window.console;
-        t &&
-          (i.isFirefox || i.isChrome
-            ? t.log.apply(t, [
-                "\n" +
-                  (e
-                    ? atob(
-                        "JWMgQ3JlYXRlZCBieSBKYWNrY2hlbjAwNyAlYyBodHRwczovL2dpdGh1Yi5jb20vamFja2NoZW4wMTIw"
-                      )
-                    : atob(
-                        "JWMgRGV2ZWxvcGVkIGJ5IEphY2tjaGVuMDA3ICVjIGh0dHBzOi8vZ2l0aHViLmNvbS9qYWNrY2hlbjAxMjA="
-                      )) +
-                  "\n",
-                atob(
-                  "Y29sb3I6ICNmZmY7IGJhY2tncm91bmQ6ICMyMjI7IHBhZGRpbmc6NXB4IDVweDs="
-                ),
-                atob(
-                  "Y29sb3I6ICM5OTk7IGJhY2tncm91bmQ6ICNGQ0ZDRkM7IHBhZGRpbmc6NXB4IDA7"
-                ),
-              ])
-            : t.log(
-                atob(
-                  e
-                    ? "JWMgQ3JlYXRlZCBieSBKYWNrY2hlbjAwNyAlYyBodHRwczovL2dpdGh1Yi5jb20vamFja2NoZW4wMTIw"
-                    : "JWMgRGV2ZWxvcGVkIGJ5IEphY2tjaGVuMDA3ICVjIGh0dHBzOi8vZ2l0aHViLmNvbS9qYWNrY2hlbjAxMjA="
-                )
-              ));
-      }
-    };
+    t.add = function (e) {};
   },
   function (e, t, n) {
     "use strict";
@@ -6123,7 +6093,7 @@
         scatterPowInv: 0.4,
         lightColor: 46079,
         backgroundColor: 394758,
-        path: "blog",
+        path: "featured",
         camera: new i.PerspectiveCamera(60, 1, 0.1, 10),
         pointCount: 64 * Math.ceil(window.screen.height / 30),
         parallax: 0,
